@@ -635,12 +635,12 @@ body:after {
     font-family: "Arbutus Slab", serif; }
   .site-blocks-cover .img-face {
     position: absolute;
-    right: -5%;
+    right: 0;
     bottom: 0;
-    z-index: 1; }
+    z-index: 1 }
     @media (max-width: 991.98px) {
       .site-blocks-cover .img-face {
-        right: -25%; } }
+        right: 0; } }
 
 .section-title {
   position: relative;
@@ -961,6 +961,18 @@ body:after {
   border-radius: 50%;
   grid-area: image;
   overflow: hidden;
+}
+
+  @media (max-width: 991.98px){
+    .img {
+  width: 10rem;
+  height: 10rem;
+  background: #888;
+  border: 0.3rem solid #888;
+  border-radius: 50%;
+  grid-area: image;
+  overflow: hidden;
+}
 }
 
 .img > img {
