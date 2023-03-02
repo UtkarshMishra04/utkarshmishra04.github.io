@@ -1,0 +1,194 @@
+body {
+    font-size: 1.8rem;
+}
+
+@font-face {
+    font-family: 'futura_ltregular';
+    src: url('../fonts/futuralt-webfont.woff2') format('woff2'),
+    url('../fonts/futuralt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_ltbook';
+    src: url('../fonts/futuralt-book-webfont.woff2') format('woff2'),
+    url('../fonts/futuralt-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+hr {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+h4{
+    font-family: 'futura_ltregular', sans-serif;
+}
+
+h5{
+    font-family: 'futura_ltbook', sans-serif;
+    font-size: 2.0rem;
+}
+
+@media (min-width: 550px) {
+    h5 {
+        font-size: 2.6rem;
+    }
+}
+
+.navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    border: none;
+    height: 4rem;
+    margin-top: 3%;
+    font-family: 'futura_ltbook', sans-serif;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar-item{
+    float: right;
+    color: rgb(17, 29, 204);
+}
+
+.navbar-list{
+    padding-right: 40px;
+}
+
+p {
+    font-family: adobe-garamond-pro, serif;
+}
+
+a {
+    color: rgb(17, 29, 204);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover {
+    color: #11aacc;
+}
+
+.sidebar {
+    text-align: center;
+    font-family: adobe-garamond-pro, serif;
+    font-size: 1.8rem;
+}
+
+.sidebar span {
+    display: block;
+}
+
+.sidebar a {
+    color: #0b0b0b;
+}
+
+.sidebar a:hover {
+    color: rgb(17, 29, 204);
+}
+
+.text {
+    font-family: adobe-garamond-pro, serif;
+}
+
+.headshot {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.intro {
+    font-family: adobe-garamond-pro, serif;
+    text-align:justify
+}
+
+.pub-image {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pub-image img {
+    max-height: 110px;
+}
+
+.pub-venue {
+    font-style: italic;
+    text-align:justify
+}
+
+.pub-authors {
+    font-size: 1.6rem;
+    /* text-align:justify */
+}
+
+.pub-title {
+    font-size: 1.8rem;
+    font-family: 'futura_ltregular', sans-serif;
+    text-align:justify
+}
+
+.publication {
+    padding-bottom: 30px;
+    text-align:justify
+}
+
+.fw6 {
+    font-weight: 600;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+#snackbar.show {
+visibility: visible;
+-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+from {bottom: 0; opacity: 0;} 
+to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+from {bottom: 0; opacity: 0;}
+to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+from {bottom: 30px; opacity: 1;} 
+to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+from {bottom: 30px; opacity: 1;}
+to {bottom: 0; opacity: 0;}
+}
