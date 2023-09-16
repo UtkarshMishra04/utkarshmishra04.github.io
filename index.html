@@ -66,11 +66,13 @@
         <div class="one columns">&nbsp;</div>
         <div class="eight columns intro">
             <p style="text-align:justify">
-                Hi! I am Utkarsh Mishra. I am a dcotoral candidate in Robotics at Georgia Tech with <a href="https://yongxin.ae.gatech.edu/"> Dr. Yongxin Chen</a> from Summer 2022. I graduated from IIT Roorkee with a B. Tech. Mechanical Engineering in 2021. I have worked with <a href="https://drmatttaylor.net/">Prof. Matthew E. Taylor</a> at the <a href="https://irll.ca/">Inverse Reinforcement Learning lab, University of Alberta</a> and 
+                Hi! I am Utkarsh Mishra. I am a 2nd year PhD student in Robotics at Georgia Tech with <a href="https://yongxin.ae.gatech.edu/"> Dr. Yongxin Chen</a> and <a href="https://faculty.cc.gatech.edu/~danfei/">Dr. Danfei Xu</a>. 
+                I am particularly interested in exploring generative methods and robot learning to achieve generalizable and safe autonomy.
+                I graduated from IIT Roorkee with a B. Tech. Mechanical Engineering in 2021. 
+                I have worked with Sony R&D US Labs, <a href="https://drmatttaylor.net/">Prof. Matthew E. Taylor</a> at the <a href="https://irll.ca/">Inverse Reinforcement Learning lab, University of Alberta</a> and 
                 <a href="https://shishirny.github.io/">Prof. Shishir Kolathaya</a> at the <a href="https://stochlab.github.io/">Stochastic Robotics lab</a>, Indian Institute of Science. 
-                I am particularly interested in exploring self-supervised task representations and planning based supervision to achieve efficient robot learning and safe autonomy.
                 Previously, I have collaborated with <a href="https://www.epfl.ch/labs/biorob/people/ijspeert/">Prof. Auke Ijspeert</a> and <a href="https://www.epfl.ch/labs/biorob/people/stanev/">Dr. Dimitar Stanev</a> at the <a href="https://www.epfl.ch/labs/biorob/">Biorobotics Laboratory</a>, EPFL. 
-                <!-- I have also worked on Cable Driven Robots with <a href="https://www.ls2n.fr/annuaire/Stephane%20CARO/"> Dr. Stéphane Caro</a> at CNRS-LS2N France and have spent some time under the guidance of <a href="https://www.iitr.ac.in/~ME/Pathak_Pushparaj_Mani">Prof. Pushparaj M. Pathak</a> and <a href="https://www.iitr.ac.in/~MA/Sukavanam_N_">Prof. N. Sukavanam</a> at <a href="https://iitr.ac.in/">IIT Roorkee.</a> -->
+                I have also worked on Cable Driven Robots with <a href="https://www.ls2n.fr/annuaire/Stephane%20CARO/"> Dr. Stéphane Caro</a> at CNRS-LS2N France.
             </p>
             </p>
         </div>
@@ -81,23 +83,46 @@
                 Updates: 
             </h5>
             <ul>
+                <li> Generative Skill Chaining is accepted as CoRL23 poster. More details can be found <a href="https://sites.google.com/view/generative-skill-chaining" target="_blank">here</a>.</li>
                 <li>I am reviewing for NeurIPS 2023 and CoRL 2023.</li>
                 <li>I started as an AI/ML intern at Sony R&D US Labs with the Core AI Research Group.</li>
                 <li>"ReorientDiff: Diffusion Model based Reorientation for Object Manipulation" is out on <a href="https://arxiv.org/abs/2303.12700">Arxiv: 2303.12700</a>.</li>
                 <li>I am reviewing for ICML 2023.</li>
                 <li> I started collaborating with <a href="https://faculty.cc.gatech.edu/~danfei/">Dr. Danfei Xu</a> on solving long horizon TAMP problems.</li>
+                <span id="more" style="display: none">
                 <li>"Learning Representations for Control over Pixels: What Matters and Why." accepted by TMLR.</li>
                 <li>I am reviewing for NeurIPS 2022.</li>
                 <li>I am attending RLDM 2022 at Brown University, Providence and will be presenting an accepted poster.</li>
                 <li>I am attending ICRA 2022 in Philadelphia and will be presenting one of my two accepted publications.</li>
                 <li>I have joined the Ph.D. Robotics program with <a href="https://yongxin.ae.gatech.edu/"> Dr. Yongxin Chen</a> at Gerogia Tech.</li>
+                </span>
             </ul>
+            <button onclick="moreCollapsible()" id="myBtn">Read more</button>
             </div>
     </div>
     <div class="row" style="margin-top: 5%">
         <div class="columns intro">
             <h5>Selected Articles</h5>
             <hr/>
+            <div class="row publication">
+                <div class="pub-image four columns">
+                    <img src="img/gsc.png">
+                </div>
+                <div class="pub-desc eight columns">
+                    <span class="pub-title">
+                        <a href="https://sites.google.com/view/generative-skill-chaining"> Generative Skill Chaining: Long-Horizon Skill Planning with Diffusion Models.  
+                    </a> </span>
+                    <div class="pub-authors"> <span class="fw6">Utkarsh A. Mishra</span>, Shangjie Xue, Yongxin Chen and Danfei Xu.
+                    </div>
+                    <span class="pub-venue">Poster at CoRL 2023.</span><br/>
+                    <span class="pub-desc">
+                        <a href="https://sites.google.com/view/generative-skill-chaining/">Website</a>&nbsp&nbsp&nbsp
+                        <a href="https://openreview.net/forum?id=HtJE9ly5dT">Paper</a>&nbsp&nbsp&nbsp
+                        <a href="https://github.com/UtkarshMishra04/ReorientDiff/tree/code">Code</a>&nbsp&nbsp&nbsp
+                        <a href="https://youtu.be/U2l2QQYdoNY">Video</a>
+                    </span>
+                </div>
+            </div>
             <div class="row publication">
                 <div class="pub-image four columns">
                     <img src="img/reorientdiff.png">
@@ -113,8 +138,8 @@
                     <span class="pub-desc">
                         <a href="https://utkarshmishra04.github.io/ReorientDiff/">Website</a>&nbsp&nbsp&nbsp
                         <a href="https://arxiv.org/abs/2303.12700">Paper</a>&nbsp&nbsp&nbsp
-                        <a href="https://github.com/UtkarshMishra04/ReorientDiff/tree/code">Code</a>&nbsp&nbsp&nbsp
-                        <a href="https://youtu.be/U2l2QQYdoNY">Video</a>
+                        <a onclick="snackBar()">Code</a>&nbsp&nbsp&nbsp
+                        <a onclick="snackBar()">Video</a>
                     </span>
                 </div>
             </div>
@@ -279,6 +304,19 @@
     var x = document.getElementById("snackbar");
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+
+    function moreCollapsible() {
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (btnText.innerHTML == "Read less") {
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
     }
 </script>
 </body>
