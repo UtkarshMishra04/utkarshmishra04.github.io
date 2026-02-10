@@ -1,5 +1,6 @@
 body {
     font-size: 1.8rem;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -60,6 +61,7 @@ h5{
 .navbar-item{
     float: right;
     color: rgb(17, 29, 204);
+    transition: all 0.3s ease;
 }
 
 .navbar-list{
@@ -101,6 +103,28 @@ a:hover {
     color: rgb(17, 29, 204);
 }
 
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(17, 29, 204);
+    transform: translateY(-3px);
+}
+
+.affiliation-cell {
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 1);
+}
+
 .text {
     font-family: adobe-garamond-pro, serif;
 }
@@ -108,6 +132,12 @@ a:hover {
 .headshot {
     width: 200px;
     border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.headshot:hover {
+    transform: scale(1.05);
 }
 
 .intro {
@@ -124,6 +154,13 @@ a:hover {
 
 .pub-image img {
     max-height: 110px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+}
+
+.pub-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .pub-venue {
@@ -140,6 +177,15 @@ a:hover {
     font-size: 1.8rem;
     font-family: 'futura_ltregular', sans-serif;
     text-align:justify
+}
+
+.pub-title a {
+    transition: color 0.2s ease;
+}
+
+.pub-desc a {
+    padding: 2px 4px;
+    transition: all 0.2s ease;
 }
 
 .publication {
