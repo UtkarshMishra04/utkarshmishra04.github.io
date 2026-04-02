@@ -10,6 +10,19 @@
     <meta name="author" content="Utkarsh A. Mishra">
     <meta name="keywords" content="utkarsh, mishra, robotics, rl">
 
+    <!-- Open Graph / Social Sharing
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta property="og:title" content="Utkarsh A. Mishra">
+    <meta property="og:description" content="PhD student in Robotics at Georgia Tech. Research in generative methods, physical reasoning, and long-horizon planning.">
+    <meta property="og:image" content="https://umishra.me/images/face.jpeg">
+    <meta property="og:url" content="https://umishra.me">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@utkarshm0410">
+    <meta name="twitter:title" content="Utkarsh A. Mishra">
+    <meta name="twitter:description" content="PhD student in Robotics at Georgia Tech. Research in generative methods, physical reasoning, and long-horizon planning.">
+    <meta name="twitter:image" content="https://umishra.me/images/face.jpeg">
+
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,15 +58,13 @@
 <div class="container">
     <nav class="navbar">
         <ul class="navbar-list">
-            <!-- <li class="navbar-item" style="margin: 1%"><a href="/me_page/" class="nav-link">Me Page</a> </li> -->
-            <!-- <li class="navbar-item" style="margin: 1%"><a href="./docs/resume_mishra_utkarsh.pdf">Resume</a></li> -->
             <li class="navbar-item" style="margin: 1%"><a href="mailto:umishra31@gatech.edu?subject=Request%20for%20Resume">Resume</a></li>
             <li class="navbar-item" style="margin: 1%"><a href="./docs/graduate_transcript.pdf">Transcripts</a> </li>
         </ul>
     </nav>
     <div class="row" style="margin-top: 1%">
         <div class="four columns sidebar">
-            <img class="headshot" src="./images/face.jpeg" alt="Utkarsh A. Mishra">
+            <img id="headshot" class="headshot" src="./images/face.jpeg" alt="Utkarsh A. Mishra">
             <h4 class="avatar-title">Utkarsh A. Mishra</h4>
             <span><a href="mailto:umishra31@gatech.edu">umishra31@gatech.edu</a></span>
             <span class="social-icons">
@@ -66,369 +77,98 @@
         <div class="one columns">&nbsp;</div>
         <div class="eight columns intro">
             <p style="text-align:justify">
-                Hi! I am Utkarsh Mishra. I started my 4th year of PhD in Robotics at Georgia Tech 
-                with <a href="https://yongxin.ae.gatech.edu/"> Dr. Yongxin Chen</a> and 
-                <a href="https://faculty.cc.gatech.edu/~danfei/">Dr. Danfei Xu</a>. 
-                My research lies at the intersection of generative methods, physical reasoning, and 
-                long-horizon planning for robotics. I focus on compositional diffusion-based approaches 
-                that generate long-horizon plans directly at inference from short-horizon data [<a href="https://generative-skill-chaining.github.io/">GSC</a>, <a href="https://generative-fc.github.io/">GFC</a>]. 
-                Recently, I've integrated search with compositional diffusion to scale performance with compute at inference
-                <!-- , ensuring coherent  -->
-                <!-- long-horizon plans while maintaining short-horizon feasibility -->
-                [<a href="https://umishra.me/CDGS">CDGS</a>]. My work has applications in 
-                robotic planning, panorama generation, and video diffusion models. These days, I'm particularly 
-                interested in exploring controllable video generation informed by physical reasoning and its applications in making capable planners and policies for
-                long-horizon planning.
+                Hi! I am Utkarsh Mishra. I started my 4th year of PhD in Robotics at Georgia Tech
+                with <a href="https://yongxin.ae.gatech.edu/"> Dr. Yongxin Chen</a> and
+                <a href="https://faculty.cc.gatech.edu/~danfei/">Dr. Danfei Xu</a>.
+                My research lies at the intersection of generative methods, physical reasoning, and
+                long-horizon planning for robotics.
+                I am currently interning at the Frontier AI & Robotics lab at Amazon. In the past, I have completed internships with Large Behavior Model (LBM) team at TRI and Sony R&D US Labs.
+                <a class="bio-toggle" onclick="toggleBio()">[more]</a>
             </p>
-            <p style="text-align:justify">
-                I am currently interning at the Frontier AI & Robotics lab at Amazon. In the past, I have completed internships with Large Behavior Model (LBM) team at TRI and Sony R&D US Labs. 
-                Before joining GaTech, I have worked with <a href="https://drmatttaylor.net/">Prof. Matthew E. Taylor</a> at the <a href="https://irll.ca/">Inverse Reinforcement Learning lab, University of Alberta</a> and 
-                <a href="https://shishirny.github.io/">Prof. Shishir Kolathaya</a> at the <a href="https://stochlab.github.io/">Stochastic Robotics lab</a>, Indian Institute of Science. 
-                Previously, I have collaborated with <a href="https://www.epfl.ch/labs/biorob/people/ijspeert/">Prof. Auke Ijspeert</a> and <a href="https://www.epfl.ch/labs/biorob/people/stanev/">Dr. Dimitar Stanev</a> at the <a href="https://www.epfl.ch/labs/biorob/">Biorobotics Laboratory</a>, EPFL. 
-                I have also worked on Cable Driven Robots with <a href="https://www.ls2n.fr/annuaire/Stephane%20CARO/"> Dr. Stéphane Caro</a> at CNRS-LS2N France.
-            </p>
+            <div id="bio-more">
+                <p style="text-align:justify">
+                    I focus on compositional diffusion-based approaches
+                    that generate long-horizon plans directly at inference from short-horizon data [<a href="https://generative-skill-chaining.github.io/">GSC</a>, <a href="https://generative-fc.github.io/">GFC</a>].
+                    Recently, I've integrated search with compositional diffusion to scale performance with compute at inference
+                    [<a href="https://umishra.me/CDGS">CDGS</a>]. My work has applications in
+                    robotic planning, panorama generation, and video diffusion models. These days, I'm particularly
+                    interested in exploring controllable video generation informed by physical reasoning and its applications in making capable planners and policies for
+                    long-horizon planning.
+                </p>
+                <p style="text-align:justify">
+                    Before joining GaTech, I have worked with <a href="https://drmatttaylor.net/">Prof. Matthew E. Taylor</a> at the <a href="https://irll.ca/">Inverse Reinforcement Learning lab, University of Alberta</a> and
+                    <a href="https://shishirny.github.io/">Prof. Shishir Kolathaya</a> at the <a href="https://stochlab.github.io/">Stochastic Robotics lab</a>, Indian Institute of Science.
+                    Previously, I have collaborated with <a href="https://www.epfl.ch/labs/biorob/people/ijspeert/">Prof. Auke Ijspeert</a> and <a href="https://www.epfl.ch/labs/biorob/people/stanev/">Dr. Dimitar Stanev</a> at the <a href="https://www.epfl.ch/labs/biorob/">Biorobotics Laboratory</a>, EPFL.
+                    I have also worked on Cable Driven Robots with <a href="https://www.ls2n.fr/annuaire/Stephane%20CARO/"> Dr. Stéphane Caro</a> at CNRS-LS2N France.
+                </p>
+            </div>
         </div>
     </div>
+    <!-- Updates — rendered from data/updates.js -->
     <div class="row" style="margin-top: 5%">
         <div class="columns intro">
             <h5>
-                Updates: 
+                Updates:
             </h5>
-            <ul>
-                <!-- <li> Excited to spend my 2026 Summer at Nvidia Seattle Robotics Lab as a Research Intern.</li> -->
-                <li> CDGS is selected for an Oral presentation (top 1.18%) at ICLR 2026. See you in Rio!</li>
-                <li> Excited to spend my 2026 Spring at Amazon FAR Lab as an Applied Science Intern.</li>
-                <li> Compositional Diffusion with Guided Search is out on Arxiv: <a href="https://arxiv.org/abs/2601.00126" target="_blank">2601.00126</a></li>
-                <li> I am attending NeurIPS 2025 and assisting Yunhao present <a href="https://comp-diffuser.github.io/" target="_blank">CompDiffuser</a>(SPOTLIGHT)</li>
-                <li> Generative Factor Chaining is accepted as CoRL24 poster. More details can be found <a href="https://generative-fc.github.io/" target="_blank">here</a>.</li>
-                <li> Generative Factor Chaining will be presented as a SPOTLIGHT talk in Back to the Future ICRA 2024 workshop!</li>
-                <span id="more" style="display: none">
-                <li> Excited to spend my 2024 Summer at Toyota Research Institute as a ML/Robotics Research Intern.</li>
-                <li> Generative Factor Chaining won best paper award in Back to the Future ICRA 2024 workshop! Thanks to the organizers.</li>
-                <li> Generative Factor Chaining will be presented as a SPOTLIGHT talk in Back to the Future ICRA 2024 workshop!</li>
-                <li> ReorientDiff is accepted at ICRA 2024. See you in Yokohama! More details <a href="https://utkarshmishra04.github.io/ReorientDiff/">here</a>.</li>
-                <li> Generative Skill Chaining is out on arxiv after 5 months "on hold": <a href="https://arxiv.org/abs/2401.03360">Arxiv: 2401.03360</a>.</li>
-                <li> Attending CoRL'23. Gave a (SPOTLIGHT) talk at the <a href="https://leap-workshop.github.io/">LEAP</a> workshop. Also presented posters at <a href="https://leap-workshop.github.io/">LEAP</a> and <a href="https://generalist-robots.github.io/">TGR</a> workshop.</li>
-                <li> Generative Skill Chaining is accepted as CoRL23 poster. More details can be found <a href="https://generative-skill-chaining.github.io/" target="_blank">here</a>.</li>
-                <li>I am reviewing for NeurIPS 2023 and CoRL 2023, will continue with ICLR 2024.</li>
-                <li>I started as an AI/ML intern at Sony R&D US Labs with the Core AI Research Group.</li>
-                <li>"ReorientDiff: Diffusion Model based Reorientation for Object Manipulation" is out on <a href="https://arxiv.org/abs/2303.12700">Arxiv: 2303.12700</a>.</li>
-                <li>I am reviewing for ICML 2023.</li>
-                <li> I started collaborating with <a href="https://faculty.cc.gatech.edu/~danfei/">Dr. Danfei Xu</a> on solving long horizon TAMP problems.</li>
-                <li>"Learning Representations for Control over Pixels: What Matters and Why." accepted by TMLR.</li>
-                <li>I am reviewing for NeurIPS 2022.</li>
-                <li>I am attending RLDM 2022 at Brown University, Providence and will be presenting an accepted poster.</li>
-                <li>I am attending ICRA 2022 in Philadelphia and will be presenting one of my two accepted publications.</li>
-                <li>I have joined the Ph.D. Robotics program with <a href="https://yongxin.ae.gatech.edu/"> Dr. Yongxin Chen</a> at Gerogia Tech.</li>
-                </span>
-            </ul>
-            <button onclick="moreCollapsible()" id="myBtn">Read more</button>
+            <ul id="updates-list"></ul>
+            <span class="updates-btns">
+                <button onclick="showMoreUpdates()" id="updatesMoreBtn">Read more</button>
+                <button onclick="showLessUpdates()" id="updatesLessBtn" style="display:none">Read less</button>
+            </span>
             </div>
     </div>
-    <div class = "row">
-        <table width="100%" margin-top=100px>
-            <tr>
-
-              <td width="16%" class="affiliation-cell">
-                <img src="./images/gatech.png" width="60%" alt="Georgia Tech logo">
-              </td>
-
-              <!-- <td width="16%" class="affiliation-cell">
-                <img src="./images/nvidia.jpg" width="100%" alt="NVIDIA logo">
-              </td> -->
-
-              <td width="16%" class="affiliation-cell">
-                <img src="./images/amazon.png" width="100%" alt="Amazon logo">
-              </td>
-
-              <td width="16%" class="affiliation-cell">
-                <img src="./images/TRI.jpeg" width="80%" alt="Toyota Research Institute logo">
-              </td>
-
-              <td width="16%" class="affiliation-cell">
-                <img src="./images/sony.png" width="70%" alt="Sony logo">
-              </td>
-
-              <td width="14%" class="affiliation-cell">
-                <img src="./images/IITR.png" width="50%" alt="IIT Roorkee logo">
-              </td>
-            </tr>
-
-            <tr>
-                <td class="pub-authors affiliation-cell">PhD, Robotics<br>Georgia Tech<br>2022 - Present</td>
-
-                <!-- <td class="pub-authors affiliation-cell">Research Intern<br>Nvidia SRL<br>Summer 2026</td> -->
-
-                <td class="pub-authors affiliation-cell">Research Intern<br>Amazon FAR<br>Spring 2026</td>
-
-                <td class="pub-authors affiliation-cell">Research Intern<br>TRI LBM<br>Summer 2024</td>
-
-                <td class="pub-authors affiliation-cell">Research Intern<br>Sony R&D<br>Summer 2023</td>
-
-                <td class="pub-authors affiliation-cell">BTech, ME<br>IIT Roorkee<br>2017 - 2021</td>
-          </tr>
-
-          </table>
-      </div>
+    <!-- Publications — rendered from data/publications.js -->
     <div class="row" style="margin-top: 5%">
         <div class="columns intro">
-            <h5>Selected Articles</h5>
+            <h5 style="display:inline">Publications</h5>
+            <span class="pub-tabs">
+                <button class="pub-tab active" onclick="switchTab('selected', this)">Selected</button>
+                <button class="pub-tab" onclick="switchTab('all', this)">All</button>
+            </span>
             <hr/>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/cdgs.png" alt="CDGS visualization" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="http://umishra.me/CDGS/"> Compositional Diffusion with Guided search for Long-Horizon Planning.  
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Utkarsh A. Mishra</span>, David He, Yongxin Chen and Danfei Xu.
-                    </div>
-                    <span class="pub-venue">ICLR 2026 (ORAL, Top 1.18%)</span><br/>
-                    <span class="pub-desc">
-                        <a href="http://umishra.me/CDGS/">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://arxiv.org/pdf/2601.00126">Paper</a>&nbsp&nbsp&nbsp
-                        <a href="https://github.com/cdgsearch/getting_started_with_CDGS">Code</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/gfc.png" alt="GFC visualization" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://generative-fc.github.io/"> Generative Factor Chaining: Coordinated Manipulation with Diffusion-based Factor Graph.  
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Utkarsh A. Mishra</span>, Yongxin Chen and Danfei Xu.
-                    </div>
-                    <span class="pub-venue">Proceedings of CoRL 2024 (Poster).</span><br/>
-                    <span class="pub-venue">Oral: ICRA 2024 Workshop — Back to the Future: Robot Learning Going Probabilistic </span><br/>
-                    <span class="pub-venue">Oral: ICRA 2024 Workshop: A Future Roadmap for Sensorimotor Skill Learning for Robot Manipulation </span><br/>
-                    <span class="pub-desc">
-                        <a href="https://generative-fc.github.io/">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://openreview.net/forum?id=p6Wq6TjjHH">Paper</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Code</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/gsc.png" alt="GSC visualization" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://generative-skill-chaining.github.io/"> Generative Skill Chaining: Long-Horizon Skill Planning with Diffusion Models.  
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Utkarsh A. Mishra</span>, Shangjie Xue, Yongxin Chen and Danfei Xu.
-                    </div>
-                    <span class="pub-venue">Proceedings of CoRL 2023 (Poster).</span><br/>
-                    <span class="pub-venue">Oral: CoRL 2023 Learning Effective Abstractions for Planning (LEAP) Workshop </span><br/>
-                    <span class="pub-desc">
-                        <a href="https://generative-skill-chaining.github.io/">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://openreview.net/forum?id=HtJE9ly5dT">Paper</a>&nbsp&nbsp&nbsp
-                        <a href="https://github.com/generative-skill-chaining/gsc-code">Code</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/reorientdiff.png" alt="ReorientDiff visualization" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://utkarshmishra04.github.io/ReorientDiff/"> ReorientDiff: Diffusion Model based Reorientation for Object Manipulation.  
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Utkarsh A. Mishra</span> and Yongxin Chen.
-                    </div>
-                    <span class="pub-venue">ICRA 2024</span><br/>
-                    <span class="pub-venue">Poster: RSS 2023 Learning for Task and Motion Planning Workshop </span><br/>
-                    <span class="pub-desc">
-                        <a href="https://utkarshmishra04.github.io/ReorientDiff/">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://arxiv.org/abs/2303.12700">Paper</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Code</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/what_matters.png" alt="Pixel representations visualization" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://openreview.net/forum?id=Ti2i204vZON"> Learning Representations for Control over Pixels: What Matters and Why.  
-                    </a> </span>
-                    <div class="pub-authors"> Manan Tomar*, <span class="fw6">Utkarsh A. Mishra*</span>, Amy Zhang and Matthew E. Taylor.
-                    </div>
-                    <span class="pub-venue">Transactions in Machine Learning Research 2022. </span> <br/>
-                    <span class="pub-venue">Poster: Reinforcement Learning and Decision Making 2022.</span> <br/>
-                    <span class="pub-venue">Poster: Ecological RL workshop at NeurIPS 2021.</span> <br/>
-                    <span class="pub-desc">
-                        <a href="https://utkarshmishra04.github.io/pixel-representations-RL/">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://openreview.net/forum?id=wIXHG8LZ2w">Paper</a>&nbsp&nbsp&nbsp
-                        <a href="https://github.com/UtkarshMishra04/pixel-representations-RL">Code</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/demorl.png" alt="DMD-MPC visualization" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="http://arxiv.org/abs/2106.15273"> Dynamic Mirror Descent based Model Predictive Control for Accelerating Robot Learning.  
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Utkarsh A. Mishra*</span>, Soumya R. Samineni*, Prakhar Goel, Chandravaran Kunjeti, Himanshu Lodha, Aman Singh, Aditya Sagi, Shalabh Bhatnagar and Shishir Kolathaya.
-                    </div>
-                    <span class="pub-venue">ICRA 2022. </span><br/>
-                    <span class="pub-venue">Poster: 2nd Offline RL workshop at NeurIPS 2021.</span><br/>
-                    <span class="pub-venue">Poster: Deep RL Workshop at NeurIPS 2021.</span><br/>
-                    <span class="pub-desc">
-                        <a href="https://utkarshmishra04.github.io/DMD-MPC-RL/">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://arxiv.org/pdf/2112.02999.pdf">Paper</a>&nbsp&nbsp&nbsp
-                        <a href="https://github.com/UtkarshMishra04/DMD-MPC-RL">Code</a>&nbsp&nbsp&nbsp
-                        <a href="https://www.youtube.com/watch?v=gonray3YGZI">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/icra22ral.png" alt="Linear policies bipedal walking" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://arxiv.org/abs/2109.12665">Linear Policies are Sufficient to Realize Robust Bipedal Walking on Challenging Terrains. 
-                    </a> </span>
-                    <div class="pub-authors"> Lokesh Krishna*, Guillermo A. Castillo*, <span class="fw6">Utkarsh A. Mishra</span>, Ayonga Hereid, Shishir Kolathaya
-                    </div>
-                    <span class="pub-venue">IEEE RAL + ICRA 2022. </span><br/>
-                    <span class="pub-desc">
-                        <a href="https://stochlab.github.io/projects/LinearPolicyBiped.html">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://doi.org/10.1109/LRA.2022.3143227">Paper</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Code</a>&nbsp&nbsp&nbsp
-                        <a href="https://www.youtube.com/watch?v=jfdafZWFj9I">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/2D-movements.png" alt="Human gait imitation" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="http://arxiv.org/abs/2106.15273">Learning Control Policies to Imitate Human Gaits. 
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Utkarsh A. Mishra</span>, Dimitar Stanev, Auke J. Ijspeert, and Pushparaj M. Pathak.
-                    </div>
-                    <span class="pub-venue">Bachelor Thesis Report</span><br/>
-                    <span class="pub-desc">
-                        <a href="https://utkarshmishra04.github.io/bioimitation-gym/">Website</a>&nbsp&nbsp&nbsp
-                        <a href="http://arxiv.org/abs/2106.15273">Paper</a>&nbsp&nbsp&nbsp
-                        <a href="https://github.com/UtkarshMishra04/bioimitation-gym">Code</a>&nbsp&nbsp&nbsp
-                        <a href="https://www.youtube.com/playlist?list=PLDvnH871wUkFPOcCKcsTN6ZzzjNZOVlt_">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/icra22ral.png" alt="Linear policies terrain slopes" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://arxiv.org/abs/2104.01662">Learning Linear Policies for Robust Bipedal Locomotion on Terrains with Varying Slopes. 
-                    </a> </span>
-                    <div class="pub-authors"> Lokesh Krishna, <span class="fw6">Utkarsh A. Mishra</span>, Guillermo A. Castillo, Ayonga Hereid, Shishir Kolathaya
-                    </div>
-                    <span class="pub-venue">IROS 2021</span><br/>
-                    <span class="pub-desc">
-                        <a href="https://stochlab.github.io/projects/LinearPolicyBiped.html">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://arxiv.org/abs/2104.01662">Paper</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Code</a>&nbsp&nbsp&nbsp
-                        <a href="https://www.youtube.com/watch?v=4WhgD8u74OY">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/laser_tracking.png" alt="Cable-driven parallel robots" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://hal.archives-ouvertes.fr/hal-03348135">Forward Kinematics for Suspended Under-Actuated Cable-Driven Parallel Robots: A Neural Network Approach.
-                    </a> </span>
-                    <div class="pub-authors"><span class="fw6">Utkarsh A. Mishra</span>, Stéphane Caro
-                    </div>
-                    <span class="pub-venue">ASME Journal of Mechanism and Robotics</span><br/>
-                    <span class="pub-venue">Special Issue: IDETC/CIE 2021 M&R Conference.</span><br/>
-                    <span class="pub-desc">
-                        <a onclick="snackBar()">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://hal.archives-ouvertes.fr/hal-03348135">Paper</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Code</a>&nbsp&nbsp&nbsp
-                        <a href="https://www.youtube.com/watch?v=ryHRRBbrrNM">Video</a>
-                    </span>
-                </div>
-            </div>
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/simmid.JPG" alt="AFG-RRT path planning" loading="lazy">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://hal.archives-ouvertes.fr/hal-0318229s8">Kinematic Stability based AFG-RRT* Path Planning for Cable-Driven Parallel Robots.
-                    </a> </span>
-                    <div class="pub-authors"><span class="fw6">Utkarsh A. Mishra</span>, Marceau Métillon, Stéphane Caro
-                    </div>
-                    <span class="pub-venue">ICRA 2021</span><br/>
-                    <span class="pub-desc">
-                        <a onclick="snackBar()">Website</a>&nbsp&nbsp&nbsp
-                        <a href="https://doi.org/10.1109/ICRA48506.2021.9560741">Paper</a>&nbsp&nbsp&nbsp
-                        <a onclick="snackBar()">Code</a>&nbsp&nbsp&nbsp
-                        <a href="https://www.youtube.com/watch?v=FxWHUWwDVnw">Video</a>
-                    </span>
-                </div>
-            </div>
+            <div id="publications-list"></div>
         </div>
     </div>
-    <br/>
-    <br/>
-    <div class="row" style="margin: 2%">
+    <!-- Experience — rendered from data/experience.js -->
+    <div class="row" style="margin-top: 5%">
+        <div class="columns intro">
+            <h5>Experience</h5>
+            <hr/>
+        </div>
+        <div class="columns timeline-wrapper">
+            <div class="timeline" id="experience-timeline"></div>
+        </div>
+    </div>
+    <!-- Services — rendered from data/services.js -->
+    <div class="row" style="margin-top: 5%">
+        <div class="columns intro">
+            <h5>Service & Volunteering</h5>
+            <hr/>
+            <ul class="service-list" id="services-list"></ul>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 4%">
         <div class="columns">
             <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=MuPh3Mi9nAPPoDQ-4_El1P2qknqZQNKslP0q0VljxhI&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
         </div>
         <br/>
         <br/>
         <hr/>
-        <div class="pub-authors"><span class="fw6">Last Updated: 10th Feb, 2026</span></div>
+        <div class="pub-authors"><span class="fw6">Last Updated: 2nd Apr, 2026</span></div>
     </div>
+</div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <div id="snackbar">Coming soon..</div>
 
-<script>
-    function snackBar() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }
-
-    function moreCollapsible() {
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-
-    if (btnText.innerHTML == "Read less") {
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-    }
-</script>
+<!-- Data files (edit these to add content) -->
+<script src="data/profile.js"></script>
+<script src="data/publications.js"></script>
+<script src="data/updates.js"></script>
+<script src="data/experience.js"></script>
+<script src="data/services.js"></script>
+<!-- Main renderer -->
+<script src="js/site.js"></script>
 </body>
 </html>

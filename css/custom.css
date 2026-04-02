@@ -44,6 +44,85 @@ h5{
     }
 }
 
+/* Mobile: < 550px */
+@media (max-width: 549px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .navbar {
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .navbar-list {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .navbar-item {
+        float: none;
+        display: inline-block;
+    }
+
+    .sidebar {
+        margin-bottom: 20px;
+    }
+
+    .headshot {
+        width: 150px;
+    }
+
+    .one.columns {
+        display: none;
+    }
+
+    .pub-image {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .pub-image img,
+    .pub-image video {
+        max-height: 140px;
+    }
+
+    .publication {
+        max-height: 800px;
+    }
+
+    .affiliation-cell img {
+        width: 80% !important;
+    }
+
+    .affiliation-cell {
+        font-size: 1.3rem;
+        padding: 4px 2px;
+    }
+}
+
+/* Tablet: 550px - 849px */
+@media (min-width: 550px) and (max-width: 849px) {
+    .pub-image {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .pub-image img,
+    .pub-image video {
+        max-height: 130px;
+    }
+
+    .publication {
+        max-height: 600px;
+    }
+
+    .affiliation-cell {
+        font-size: 1.4rem;
+    }
+}
+
 .navbar{
     position: relative;
     top: 0;
@@ -125,6 +204,103 @@ a:hover {
     background-color: rgba(255, 255, 255, 1);
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Timeline */
+.timeline-wrapper {
+    overflow-x: auto;
+    padding: 10px 0 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.timeline {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    min-width: max-content;
+    padding: 0 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    right: 40px;
+    height: 2px;
+    background: #dbdbdb;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 140px;
+    flex: 1;
+    position: relative;
+}
+
+.timeline-logo {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.timeline-logo img {
+    max-width: 90px;
+    max-height: 55px;
+    object-fit: contain;
+}
+
+/* Per-logo tuning for visual balance */
+.timeline-logo.logo-wide img {
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.timeline-logo.logo-square img {
+    max-width: 50px;
+    max-height: 55px;
+}
+
+.timeline-dot {
+    width: 10px;
+    height: 10px;
+    background: rgb(17, 29, 204);
+    border-radius: 50%;
+    margin: 6px 0;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.timeline-info {
+    text-align: center;
+    font-family: adobe-garamond-pro, serif;
+    padding-top: 6px;
+}
+
+.timeline-role {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.timeline-place {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.timeline-date {
+    font-size: 1.3rem;
+    color: #888;
+    margin-top: 2px;
+}
+
 .text {
     font-family: adobe-garamond-pro, serif;
 }
@@ -133,16 +309,79 @@ a:hover {
     width: 200px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.4s ease;
 }
 
 .headshot:hover {
     transform: scale(1.05);
 }
 
+.headshot-fade {
+    opacity: 0;
+}
+
 .intro {
     font-family: adobe-garamond-pro, serif;
     text-align:justify
+}
+
+#bio-more {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.5s ease;
+}
+
+#bio-more.bio-expanded {
+    max-height: 600px;
+    opacity: 1;
+}
+
+.bio-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(17, 29, 204);
+    font-family: 'futura_ltbook', sans-serif;
+}
+
+/* Progressive updates show/hide */
+#updates-list li {
+    overflow: hidden;
+    max-height: 80px;
+    opacity: 1;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.4s ease;
+}
+
+#updates-list li.update-hidden {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+}
+
+.updates-btns {
+    display: inline-flex;
+    gap: 8px;
+}
+
+#myBtn,
+#updatesMoreBtn,
+#updatesLessBtn {
+    font-family: 'futura_ltbook', sans-serif;
+    font-size: 1.4rem;
+    padding: 4px 14px;
+    border: 1px solid #dbdbdb;
+    background: transparent;
+    color: #4a4a4a;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+#myBtn:hover,
+#updatesMoreBtn:hover,
+#updatesLessBtn:hover {
+    border-color: rgb(17, 29, 204);
+    color: rgb(17, 29, 204);
 }
 
 .pub-image {
@@ -158,14 +397,26 @@ a:hover {
     border-radius: 4px;
 }
 
-.pub-image img:hover {
+.pub-image img:hover,
+.pub-image video:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pub-image video {
+    max-height: 110px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
 }
 
 .pub-venue {
     font-style: italic;
     text-align:justify
+}
+
+.pub-venue ~ .pub-venue {
+    font-size: 1.4rem;
+    color: #666;
 }
 
 .pub-authors {
@@ -190,11 +441,62 @@ a:hover {
 
 .publication {
     padding-bottom: 30px;
-    text-align:justify
+    text-align:justify;
+    max-height: 500px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.4s ease, padding-bottom 0.5s ease;
+}
+
+.publication.collapsed {
+    max-height: 0;
+    opacity: 0;
+    padding-bottom: 0;
 }
 
 .fw6 {
     font-weight: 600;
+}
+
+.pub-tabs {
+    display: inline-flex;
+    gap: 6px;
+    margin-left: 12px;
+    vertical-align: baseline;
+}
+
+.pub-tab {
+    font-family: 'futura_ltbook', sans-serif;
+    font-size: 1.3rem;
+    padding: 2px 10px;
+    border: 1px solid #dbdbdb;
+    background: transparent;
+    color: #4a4a4a;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    line-height: 1.6;
+}
+
+.pub-tab.active {
+    background: rgb(17, 29, 204);
+    border-color: rgb(17, 29, 204);
+    color: #fff;
+}
+
+.pub-tab:hover:not(.active) {
+    border-color: #b5b5b5;
+    color: #363636;
+}
+
+.pub-image-placeholder {
+    height: 110px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
 }
 
 #snackbar {
@@ -238,3 +540,4 @@ to {bottom: 0; opacity: 0;}
 from {bottom: 30px; opacity: 1;}
 to {bottom: 0; opacity: 0;}
 }
+
