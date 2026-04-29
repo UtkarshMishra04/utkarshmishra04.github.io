@@ -1,6 +1,7 @@
 // Updates — add new items at the top. Use [text](url) for links.
 
 var UPDATES = [
+  "Excited to be part of [RSS 2026 Pioneers Cohort](https://sites.google.com/view/rsspioneers2026/participants?authuser=0)! See you in Sydney!",
   "CDGS is selected for an Oral presentation (top 1.18%) at ICLR 2026. See you in Rio!",
   "Excited to spend my 2026 Spring at Amazon FAR Lab as an Applied Science Intern.",
   "Compositional Diffusion with Guided Search is out on Arxiv: [2601.00126](https://arxiv.org/abs/2601.00126)",

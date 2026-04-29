@@ -2,7 +2,5 @@
 // Add new images to images/ and list them here.
 
 var PROFILE_IMAGES = [
-  "images/face.jpeg",
-  "images/face_v1.jpeg",
-  "images/face_v2.jpeg"
+  "images/face.jpeg"
 ];
