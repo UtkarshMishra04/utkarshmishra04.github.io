@@ -11,6 +11,20 @@
 
 var PUBLICATIONS = [
   {
+    title: "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning.",
+    url: "https://prpl-group.com/kinder-site/",
+    authors: "Yixuan Huang, Bowen Li, Vaibhav Saxena, Yichao Liang, Utkarsh A. Mishra, Liang Ji, Lihan Zha, Jimmy Wu, Nishanth Kumar, Sebastian Scherer, Danfei Xu, Tom Silver.",
+    venues: ["RSS 2026"],
+    video: "img/kinder.mp4",
+    links: [
+      {label: "Website", url: "https://prpl-group.com/kinder-site/"},
+      {label: "Paper", url: "https://arxiv.org/abs/2604.25788"},
+      {label: "Code", url: "https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden"},
+      {label: "Video"}
+    ],
+    selected: false
+  },
+  {
     title: "Compositional Diffusion with Guided Search for Long-Horizon Planning.",
     url: "https://umishra.me/CDGS/",
     authors: "Utkarsh A. Mishra, David He, Yongxin Chen and Danfei Xu.",
@@ -23,6 +37,20 @@ var PUBLICATIONS = [
       {label: "Video"}
     ],
     selected: true
+  },
+  {
+    title: "Compositional Visual Planning via Inference-Time Diffusion Scaling.",
+    url: "https://comp-visual-planning.github.io/",
+    authors: "Yixin Zhang, Yunhao Luo, Utkarsh A. Mishra, Woo Chul Shin, Yongxin Chen, Danfei Xu.",
+    venues: ["ICLR 2026"],
+    image: "img/cvp_yixin2026.png",
+    links: [
+      {label: "Website", url: "https://comp-visual-planning.github.io/"},
+      {label: "Paper", url: "https://openreview.net/forum?id=EEONns7ae4"},
+      {label: "Code"},
+      {label: "Video"}
+    ],
+    selected: false
   },
   {
     title: "Joint Model-based Model-free Diffusion for Planning with Constraints.",
