@@ -13,7 +13,7 @@ var PUBLICATIONS = [
   {
     title: "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning.",
     url: "https://prpl-group.com/kinder-site/",
-    authors: "Yixuan Huang, Bowen Li, Vaibhav Saxena, Yichao Liang, Utkarsh A. Mishra, Liang Ji, Lihan Zha, Jimmy Wu, Nishanth Kumar, Sebastian Scherer, Danfei Xu, Tom Silver.",
+    authors: "Yixuan Huang*, Bowen Li*, Vaibhav Saxena*, Yichao Liang, Utkarsh A. Mishra, Liang Ji, Lihan Zha, Jimmy Wu, Nishanth Kumar, Sebastian Scherer, Danfei Xu, Tom Silver.",
     venues: ["RSS 2026"],
     video: "img/kinder.mp4",
     links: [
