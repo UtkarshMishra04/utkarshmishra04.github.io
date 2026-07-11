@@ -11,6 +11,44 @@
 
 var PUBLICATIONS = [
   {
+    title: "Understanding and Mitigating the Video-Action Generalization Gap via Temporal Ratio.",
+    url: "https://umishra.me/temporal-ratio/",
+    authors: "Utkarsh A. Mishra, Yongxin Chen, Danfei Xu, Yang Liu, Xi Chen and Jiayuan Mao.",
+    venues: ["arXiv 2026"],
+    video: "img/tr.mp4",
+    links: [
+      {label: "Website", url: "https://umishra.me/temporal-ratio/"},
+      {label: "Paper", url: "https://arxiv.org/abs/2607.08127"}
+    ],
+    selected: true
+  },
+  {
+    title: "Energy-based Compositional Diffusion Planning.",
+    url: "https://github.com/GradientSpaces/ECD",
+    authors: "Tao Sun, Utkarsh A. Mishra, Jiaxin Lu, Danfei Xu and Iro Armeni.",
+    venues: ["ICML 2026"],
+    image: "img/ecd.gif",
+    links: [
+      {label: "Website", url: "https://github.com/GradientSpaces/ECD/blob/main/README.md"},
+      {label: "Paper", url: "https://arxiv.org/abs/2606.21646"},
+      {label: "Code", url: "https://github.com/GradientSpaces/ECD"}
+    ],
+    selected: false
+  },
+  {
+    title: "CoFi: Coarse-to-Fine Compositional Diffusion for Long-Horizon Planning.",
+    url: "https://cofi-diffusion.github.io/",
+    authors: "Byoungwoo Park, Utkarsh A. Mishra, Jaemoo Choi, Juho Lee and Yongxin Chen.",
+    venues: ["arXiv 2026"],
+    video: "img/cofi.mp4",
+    links: [
+      {label: "Website", url: "https://cofi-diffusion.github.io/"},
+      {label: "Paper", url: "https://arxiv.org/abs/2606.00837"},
+      {label: "Code", url: "https://github.com/bw-park/CoFi"}
+    ],
+    selected: false
+  },
+  {
     title: "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning.",
     url: "https://prpl-group.com/kinder-site/",
     authors: "Yixuan Huang*, Bowen Li*, Vaibhav Saxena*, Yichao Liang, Utkarsh A. Mishra, Liang Ji, Lihan Zha, Jimmy Wu, Nishanth Kumar, Sebastian Scherer, Danfei Xu, Tom Silver.",

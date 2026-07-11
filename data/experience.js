@@ -11,6 +11,14 @@ var EXPERIENCE = [
     date: "2022 - Present"
   },
   {
+    logo: "img/logos/nvidia.png",
+    logoSize: "wide",
+    name: "Nvidia",
+    role: "Research Intern",
+    place: "Nvidia SRL",
+    date: "Summer 2026"
+  },
+  {
     logo: "img/logos/amazon.png",
     logoSize: "wide",
     name: "Amazon",

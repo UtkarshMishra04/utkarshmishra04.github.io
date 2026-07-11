@@ -1,6 +1,8 @@
 // Updates — add new items at the top. Use [text](url) for links.
 
 var UPDATES = [
+  "Released a new study on understanding compositional generalization in VAMs: [Temporal Ratio](https://umishra.me/temporal-ratio/)",
+  "Excited to spend my 2026 Summer at Nvidia SRL Lab as a Robotics Research Intern.",
   "Excited to be part of [RSS 2026 Pioneers Cohort](https://sites.google.com/view/rsspioneers2026/participants?authuser=0)! See you in Sydney!",
   "CDGS is selected for an Oral presentation (top 1.18%) at ICLR 2026. See you in Rio!",
   "Excited to spend my 2026 Spring at Amazon FAR Lab as an Applied Science Intern.",
