@@ -3,7 +3,11 @@
 var SERVICES = [
   {
     category: "Workshop Organizing",
-    description: "[Learning Effective Abstractions for Planning (LEAP)](https://leap-workshop.github.io/), CoRL 2026, Austin, USA"
+    description: "[Learning Effective Abstractions for Planning (LEAP)](https://leap-workshop.github.io/), CoRL 2026, Austin, TX, USA"
+  },
+  {
+    category: "Workshop Organizing",
+    description: "[Compositional and Modular Learning in the Era of Scaling in Robotics](https://compositional-robotics.github.io/), IROS 2026, Pittsburgh, PA, USA"
   },
   {
     category: "Workshop Organizing",
