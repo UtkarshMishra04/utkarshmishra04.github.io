@@ -7,6 +7,10 @@ var SERVICES = [
   },
   {
     category: "Workshop Organizing",
+    description: "[Agentic Robotics: What changes when an agent must reason, act, and recover on a real robot.](https://agentic-robotics-workshop.github.io/), CoRL 2026, Austin, TX, USA"
+  },
+  {
+    category: "Workshop Organizing",
     description: "[Compositional and Modular Learning in the Era of Scaling in Robotics](https://compositional-robotics.github.io/), IROS 2026, Pittsburgh, PA, USA"
   },
   {
