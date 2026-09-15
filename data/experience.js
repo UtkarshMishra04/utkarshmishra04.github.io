@@ -16,7 +16,7 @@ var EXPERIENCE = [
     name: "Nvidia",
     role: "Research Intern",
     place: "Nvidia SRL",
-    date: "Summer 2026"
+    date: "2026"
   },
   {
     logo: "img/logos/amazon.png",
@@ -24,7 +24,7 @@ var EXPERIENCE = [
     name: "Amazon",
     role: "Research Intern",
     place: "Amazon FAR",
-    date: "Spring 2026"
+    date: "2026"
   },
   {
     logo: "img/logos/tri.png",
@@ -32,7 +32,7 @@ var EXPERIENCE = [
     name: "Toyota Research Institute",
     role: "Research Intern",
     place: "TRI LBM",
-    date: "Summer 2024"
+    date: "2024"
   },
   {
     logo: "img/logos/sony.png",
@@ -40,7 +40,7 @@ var EXPERIENCE = [
     name: "Sony",
     role: "Research Intern",
     place: "Sony R&D",
-    date: "Summer 2023"
+    date: "2023"
   },
   {
     logo: "img/logos/iitr.png",

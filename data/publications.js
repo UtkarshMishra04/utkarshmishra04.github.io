@@ -14,13 +14,25 @@ var PUBLICATIONS = [
     title: "Understanding and Mitigating the Video-Action Generalization Gap via Temporal Ratio.",
     url: "https://umishra.me/temporal-ratio/",
     authors: "Utkarsh A. Mishra, Yongxin Chen, Danfei Xu, Yang Liu, Xi Chen and Jiayuan Mao.",
-    venues: ["arXiv 2026"],
+    venues: ["CoRL 2026"],
     video: "img/tr.mp4",
     links: [
       {label: "Website", url: "https://umishra.me/temporal-ratio/"},
       {label: "Paper", url: "https://arxiv.org/abs/2607.08127"}
     ],
     selected: true
+  },
+  {
+    title: "Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training.",
+    url: "https://umishra.me/",
+    authors: "Liqian Ma, Vaibhav Saxena, Utkarsh A. Mishra, Shuo Cheng, Yongxin Chen and Danfei Xu.",
+    venues: ["CoRL 2026"],
+    image: "img/simrealco.png",
+    links: [
+      {label: "Website", url: "https://umishra.me/"},
+      {label: "Paper", url: "https://umishra.me/"}
+    ],
+    selected: false
   },
   {
     title: "Energy-based Compositional Diffusion Planning.",
@@ -84,9 +96,7 @@ var PUBLICATIONS = [
     image: "img/cvp_yixin2026.png",
     links: [
       {label: "Website", url: "https://comp-visual-planning.github.io/"},
-      {label: "Paper", url: "https://openreview.net/forum?id=EEONns7ae4"},
-      {label: "Code"},
-      {label: "Video"}
+      {label: "Paper", url: "https://arxiv.org/abs/2603.02646"},
     ],
     selected: false
   },
