@@ -384,6 +384,201 @@ table {
     color: rgb(17, 29, 204);
 }
 
+/* Research Highlights */
+.hl-math {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.hl-diagram {
+    margin-bottom: 20px;
+}
+
+.hl-hub {
+    border: 3px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.hl-hub-title {
+    font-family: 'futura_ltregular', sans-serif;
+    font-size: 1.9rem;
+    color: rgb(17, 29, 204);
+}
+
+/* s0 -> s1 -> ... -> g */
+.hl-chain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 6px 0 10px;
+}
+
+.hl-node {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #4a4a4a;
+    border-radius: 50%;
+    font-size: 1.6rem;
+}
+
+.hl-edge {
+    position: relative;
+    flex: 0 1 72px;
+    min-width: 28px;
+    border-top: 2px solid #4a4a4a;
+    margin: 0 4px;
+}
+
+.hl-edge-gap {
+    border-top-style: dashed;
+}
+
+/* Arrowhead */
+.hl-edge::after {
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: -6px;
+    border-left: 9px solid #4a4a4a;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.hl-edge-label {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.hl-formula {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+}
+
+.hl-question {
+    font-size: 1.6rem;
+    color: #4a4a4a;
+}
+
+/* Triangle: pillars 1 and 2 on top, pillar 3 centered below */
+.hl-pillars {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22%;
+    row-gap: 72px;
+    margin-top: 28px;
+}
+
+.hl-pillar {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.hl-pillar:nth-child(3) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: 39%;
+}
+
+.hl-edges {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.hl-edge-line {
+    stroke: #4a4a4a;
+    stroke-width: 1.5;
+}
+
+.hl-edge-line.hl-edge-active {
+    stroke: rgb(17, 29, 204);
+    stroke-width: 2.5;
+}
+
+.hl-edge-hit {
+    stroke: transparent;
+    stroke-width: 16;
+    pointer-events: stroke;
+    cursor: pointer;
+}
+
+/* Paper list shown when hovering an edge */
+.hl-tip {
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding: 6px 10px;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    display: none;
+}
+
+.hl-tip.hl-tip-show {
+    display: block;
+}
+
+.hl-tip-venue {
+    color: #4a4a4a;
+    font-size: 1.3rem;
+}
+
+.hl-pillar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+.hl-pillar-name {
+    font-family: 'futura_ltregular', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hl-pillar-question {
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+@media (max-width: 549px) {
+    .hl-pillars {
+        column-gap: 10%;
+        row-gap: 56px;
+    }
+
+    .hl-pillar:nth-child(3) {
+        width: 60%;
+    }
+}
+
 .pub-image {
     height: 120px;
     display: flex;

@@ -51,7 +51,7 @@ var PUBLICATIONS = [
     title: "CoFi: Coarse-to-Fine Compositional Diffusion for Long-Horizon Planning.",
     url: "https://cofi-diffusion.github.io/",
     authors: "Byoungwoo Park, Utkarsh A. Mishra, Jaemoo Choi, Juho Lee and Yongxin Chen.",
-    venues: ["arXiv 2026"],
+    venues: ["NeurIPS 2026"],
     video: "img/cofi.mp4",
     links: [
       {label: "Website", url: "https://cofi-diffusion.github.io/"},
