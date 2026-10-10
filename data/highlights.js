@@ -62,7 +62,12 @@ var HIGHLIGHTS = {
         { name: "Compositional Diffusion with Guided Search", venue: "ICLR 2026", url: "https://umishra.me/CDGS/" }
       ]
     },
-    { from: "structure", to: "representation", papers: [] },
+    {
+      from: "structure", to: "representation",
+      papers: [
+        { name: "TAMPAgent", venue: "Under Submission", url: "https://tampagent.github.io/" }
+      ]
+    },
     {
       from: "representation", to: "models",
       papers: [

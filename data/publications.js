@@ -11,6 +11,18 @@
 
 var PUBLICATIONS = [
   {
+    title: "TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation.",
+    url: "https://tampagent.github.io/",
+    authors: "Utkarsh A. Mishra, Alperen Degirmenci, Yongxin Chen, Danfei Xu, Tucker Hermans and Caelan Garrett.",
+    venues: ["Under Submission"],
+    video: "img/tampagent.mp4",
+    links: [
+      {label: "Website", url: "https://tampagent.github.io/"},
+      {label: "Paper"}
+    ],
+    selected: true
+  },
+  {
     title: "Understanding and Mitigating the Video-Action Generalization Gap via Temporal Ratio.",
     url: "https://umishra.me/temporal-ratio/",
     authors: "Utkarsh A. Mishra, Yongxin Chen, Danfei Xu, Yang Liu, Xi Chen and Jiayuan Mao.",
