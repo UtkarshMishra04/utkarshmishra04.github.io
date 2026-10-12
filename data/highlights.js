@@ -12,13 +12,13 @@
 
 var HIGHLIGHTS = {
   overview:
-    "My research goal is to understand how robots can plan many steps into the future by composing behaviors learned from short-horizon experience. " +
-    "A policy $p(a | s)$ chooses the next action, while a planner $p(τ | s, g)$ reasons over the whole trajectory, " +
-    "so goals and constraints on future states can be imposed at test time. " +
-    "I build such planners from three connected pillars: <b>models</b> that each capture a few steps of how the world evolves, " +
-    "a <b>structure</b> that composes them into long-horizon plans and searches over the possible compositions, " +
-    "and a <b>representation</b> of the world, including what has not yet been observed, over which plans are composed. " +
-    "Each pillar depends on the others: structure needs models that compose, structure is defined over a representation, " +
+    "My research goal is to understand how robots can plan over extended horizons with novel-objects by composing behaviors learned from short-horizon experiences. " +
+    "Unlike a policy $p(a | s)$ that chooses the next action, I develop planners $p(τ | s, g)$ that reason over the whole trajectory from start to desired goal, " +
+    "allowing flexible goal conditioning and imposing constraints on future states directly at test time. " +
+    "My research expands along three inter-connected axes: <b>models</b> that each capture short-horizon distribution of how the world evolves, " +
+    "a symbolic-geometric <b>structure</b> that composes them into long-horizon plans and searches over the possible compositions, " +
+    "and a <b>representation</b> of the world over which plans are composed and the one that allows reasoning for partial-observability. " +
+    "Each axes depends on the others: structure needs models that compose, structure is defined over a representation, " +
     "and models must be learned in a representation that lets them compose.",
 
   hub: {
