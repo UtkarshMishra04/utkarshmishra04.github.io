@@ -1,7 +1,8 @@
 // Updates — add new items at the top. Use [text](url) for links.
 
 var UPDATES = [
-  "Released a new method to integrate agentic reasoning with belief space planning for mobile-manipulation: [TAMPAgent](https://umishra.me/tampagent/)",
+  "[Temporal Ratio](https://umishra.me/temporal-ratio/) will be presented at CoRL 2026! The full codebase is released: [TemporalRatio](https://github.com/UtkarshMishra04/TemporalRatio). Models coming soon!",
+  "Released a new method to integrate agentic reasoning with belief space planning for mobile-manipulation: [TAMPAgent](https://umishra.me/TAMPAgent/)",
   "Released a new study on understanding compositional generalization in VAMs: [Temporal Ratio](https://umishra.me/temporal-ratio/)",
   "Excited to be part of [RSS 2026 Pioneers Cohort](https://sites.google.com/view/rsspioneers2026/participants?authuser=0)! See you in Sydney!",
   "CDGS is selected for an Oral presentation (top 1.18%) at ICLR 2026. See you in Rio!",
