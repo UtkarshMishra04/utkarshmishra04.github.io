@@ -202,6 +202,26 @@
         if (document.fonts) document.fonts.ready.then(drawEdges);
     }
 
+    // ========== Code Repositories ==========
+
+    function renderCode() {
+        var container = document.getElementById('code-list');
+        if (!container || typeof CODE === 'undefined') return;
+
+        CODE.forEach(function (repo) {
+            var a = document.createElement('a');
+            a.className = 'code-btn';
+            a.textContent = repo.name;
+            if (repo.url) {
+                a.href = repo.url;
+                a.target = '_blank';
+            } else {
+                a.onclick = function () { snackBar(); };
+            }
+            container.appendChild(a);
+        });
+    }
+
     // ========== Publications ==========
 
     function renderPublications() {
@@ -259,7 +279,12 @@
 
             var linksSpan = document.createElement('span');
             linksSpan.className = 'pub-desc';
-            pub.links.forEach(function (link, i) {
+            // Videos are hidden; Code shows only when a repository URL exists
+            var links = pub.links.filter(function (link) {
+                if (link.label === 'Code') return !!link.url;
+                return link.label !== 'Video';
+            });
+            links.forEach(function (link, i) {
                 var a = document.createElement('a');
                 if (link.url) {
                     a.href = link.url;
@@ -269,7 +294,7 @@
                 }
                 a.textContent = link.label;
                 linksSpan.appendChild(a);
-                if (i < pub.links.length - 1) {
+                if (i < links.length - 1) {
                     linksSpan.appendChild(document.createTextNode('\u00a0\u00a0\u00a0'));
                 }
             });
@@ -399,6 +424,7 @@
     renderHighlights();
     renderPublications();
     renderUpdates();
+    renderCode();
     renderExperience();
     renderServices();
     initProfileCycling();

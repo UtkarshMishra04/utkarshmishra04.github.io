@@ -344,6 +344,29 @@ table {
     font-family: 'futura_ltbook', sans-serif;
 }
 
+/* Code Repositories */
+#code-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.code-btn {
+    font-family: 'futura_ltbook', sans-serif;
+    font-size: 1.5rem;
+    padding: 6px 16px;
+    border: 1px solid rgb(17, 29, 204);
+    border-radius: 3px;
+    color: rgb(17, 29, 204);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.code-btn:hover {
+    background: rgb(17, 29, 204);
+    color: #fff;
+}
+
 /* Progressive updates show/hide */
 #updates-list li {
     overflow: hidden;

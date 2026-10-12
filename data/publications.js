@@ -18,7 +18,8 @@ var PUBLICATIONS = [
     video: "img/tampagent.mp4",
     links: [
       {label: "Website", url: "https://tampagent.github.io/"},
-      {label: "Paper"}
+      {label: "Paper"},
+      {label: "Code", url: "https://github.com/UtkarshMishra04/TAMPAgent"}
     ],
     selected: true
   },
@@ -30,7 +31,8 @@ var PUBLICATIONS = [
     video: "img/tr.mp4",
     links: [
       {label: "Website", url: "https://umishra.me/temporal-ratio/"},
-      {label: "Paper", url: "https://arxiv.org/abs/2607.08127"}
+      {label: "Paper", url: "https://arxiv.org/abs/2607.08127"},
+      {label: "Code", url: "https://github.com/UtkarshMishra04/TemporalRatio"}
     ],
     selected: true
   },
@@ -95,7 +97,7 @@ var PUBLICATIONS = [
     links: [
       {label: "Website", url: "https://umishra.me/CDGS/"},
       {label: "Paper", url: "https://arxiv.org/pdf/2601.00126"},
-      {label: "Code", url: "https://github.com/cdgsearch/getting_started_with_CDGS"},
+      {label: "Code", url: "https://github.com/UtkarshMishra04/getting_started_with_CDGS"},
       {label: "Video"}
     ],
     selected: true
