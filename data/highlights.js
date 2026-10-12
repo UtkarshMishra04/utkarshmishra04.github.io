@@ -65,7 +65,7 @@ var HIGHLIGHTS = {
     {
       from: "structure", to: "representation",
       papers: [
-        { name: "TAMPAgent", venue: "Under Submission", url: "https://tampagent.github.io/" }
+        { name: "TAMPAgent", venue: "Under Submission", url: "https://umishra.me/TAMPAgent/" }
       ]
     },
     {

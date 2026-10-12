@@ -12,14 +12,14 @@
 var PUBLICATIONS = [
   {
     title: "TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation.",
-    url: "https://tampagent.github.io/",
+    url: "https://umishra.me/TAMPAgent/",
     authors: "Utkarsh A. Mishra, Alperen Degirmenci, Yongxin Chen, Danfei Xu, Tucker Hermans and Caelan Garrett.",
     venues: ["Under Submission"],
     video: "img/tampagent.mp4",
     links: [
-      {label: "Website", url: "https://tampagent.github.io/"},
+      {label: "Website", url: "https://umishra.me/TAMPAgent/"},
       {label: "Paper"},
-      {label: "Code", url: "https://github.com/UtkarshMishra04/TAMPAgent"}
+      {label: "Code", url: "https://umishra.me/TAMPAgent/"}
     ],
     selected: true
   },
