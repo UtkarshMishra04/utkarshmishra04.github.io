@@ -1,7 +1,8 @@
 // Updates — add new items at the top. Use [text](url) for links.
 
 var UPDATES = [
-  "[Temporal Ratio](https://umishra.me/temporal-ratio/) will be presented at CoRL 2026! The full codebase is released: [TemporalRatio](https://github.com/UtkarshMishra04/TemporalRatio). Models coming soon!",
+  "[TAMPAgent](https://umishra.me/TAMPAgent/) is accepted at CoRL 2026 Late Breaking Results and LEAP Workshop! See you in Austin!",
+  "[Temporal Ratio](https://umishra.me/temporal-ratio/) will be presented at CoRL 2026! The full codebase is released: [TemporalRatio](https://github.com/UtkarshMishra04/TemporalRatio). Will keep updating models!",
   "Released a new method to integrate agentic reasoning with belief space planning for mobile-manipulation: [TAMPAgent](https://umishra.me/TAMPAgent/)",
   "Released a new study on understanding compositional generalization in VAMs: [Temporal Ratio](https://umishra.me/temporal-ratio/)",
   "Excited to be part of [RSS 2026 Pioneers Cohort](https://sites.google.com/view/rsspioneers2026/participants?authuser=0)! See you in Sydney!",

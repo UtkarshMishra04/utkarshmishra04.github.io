@@ -14,11 +14,15 @@ var PUBLICATIONS = [
     title: "TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation.",
     url: "https://umishra.me/TAMPAgent/",
     authors: "Utkarsh A. Mishra, Alperen Degirmenci, Yongxin Chen, Danfei Xu, Tucker Hermans and Caelan Garrett.",
-    venues: ["Under Submission"],
+    venues: [
+      "Under Submission",
+      "CoRL 2026 Late Breaking Results",
+      "Learning Effective Abstractions for Planning (LEAP) Workshop, CoRL 2026"
+      ],
     video: "img/tampagent.mp4",
     links: [
       {label: "Website", url: "https://umishra.me/TAMPAgent/"},
-      {label: "Paper"},
+      {label: "Paper", url: "https://arxiv.org/pdf/2611.03584v1"},
       {label: "Code", url: "https://umishra.me/TAMPAgent/"}
     ],
     selected: true
@@ -43,8 +47,8 @@ var PUBLICATIONS = [
     venues: ["CoRL 2026"],
     image: "img/simrealco.png",
     links: [
-      {label: "Website", url: "https://umishra.me/"},
-      {label: "Paper", url: "https://umishra.me/"}
+      {label: "Website", url: "https://meta-gensim.github.io/"},
+      {label: "Paper", url: "https://arxiv.org/abs/2610.19479"}
     ],
     selected: false
   },
